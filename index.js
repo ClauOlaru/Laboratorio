@@ -75,6 +75,15 @@ function validatePassword(){
 		return false; }
 }
 
+function borderButton(){
+	var borderButton = document.getElementById('button');
+	borderButton.onmouseover = () => {
+		borderButton.classList.add('borderColor'); 	}
+	borderButton.onmouseout = () => {	
+		borderButton.classList.remove('borderColor'); 	}
+}
+borderButton()
+
 function validateConfirm(){
 	var passwordField = document.getElementById('password');
 	var confirmField = document.getElementById('confirm');
@@ -101,15 +110,6 @@ function validateConfirm(){
 		return false; 
 	} 
 }
-
-function borderButton(){
-	var borderButton = document.getElementById('button');
-	borderButton.onmouseover = () => {
-		borderButton.classList.add('borderColor'); 	}
-	borderButton.onmouseout = () => {	
-		borderButton.classList.remove('borderColor'); 	}
-}
-borderButton()
 
 function validateForm(){
 
